@@ -27,8 +27,7 @@ public class PapelMVCController {
 	}
 	
 	@PostMapping("/novopapel")
-	  public String greetingSubmit(@ModelAttribute Papel papel, 
-			  Model model) {
+	  public String greetingSubmit(@ModelAttribute Papel papel, Model model) {
 	    model.addAttribute("papel", papel);
 	    return "result";
 	}
