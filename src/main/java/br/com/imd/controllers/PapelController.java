@@ -2,6 +2,7 @@ package br.com.imd.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,13 +14,16 @@ import br.com.imd.repositories.PapelRepository;
 @RestController
 public class PapelController {
 
+	@Autowired
+	private PapelRepository papelRepository;
+
 	@RequestMapping("/papeis")
 	public List<Papel> getPapeis() {
-		return PapelRepository.getPapeis();
+		return papelRepository.findAll();
 	}
 	
 	@PostMapping("/papeis")
 	public Papel addPapel(@RequestBody Papel papel) {
-		return PapelRepository.addPapel(papel);
+		return papelRepository.save(papel);
 	}
 }
