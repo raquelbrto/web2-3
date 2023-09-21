@@ -1,9 +1,9 @@
-package br.com.imd.repositories;
+package br.com.imd.papeis.repositories;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.imd.domain.Usuario;
+import br.com.imd.papeis.domain.Usuario;
 
 public class UsuarioRepository {
 
