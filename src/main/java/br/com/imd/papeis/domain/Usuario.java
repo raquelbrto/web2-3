@@ -1,4 +1,4 @@
-package br.com.imd.domain;
+package br.com.imd.papeis.domain;
 
 import java.util.List;
 import java.util.Objects;

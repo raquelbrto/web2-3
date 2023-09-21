@@ -1,7 +1,10 @@
-package br.com.imd.domain;
+package br.com.imd.papeis.domain;
 
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Papel extends AbstractEntity {
 
 	private String descricao;

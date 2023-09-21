@@ -1,12 +1,12 @@
-package br.com.imd.controllers;
+package br.com.imd.papeis.controllers;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.imd.domain.Usuario;
-import br.com.imd.repositories.UsuarioRepository;
+import br.com.imd.papeis.domain.Usuario;
+import br.com.imd.papeis.repositories.UsuarioRepository;
 
 @RestController
 public class UsuarioController {

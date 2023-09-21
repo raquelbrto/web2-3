@@ -8,9 +8,8 @@
 
 <body>
 	<h1>Novo Papel</h1>
-	<form action="#" th:action="@{/novopapel}" th:object="${papel}" method="post">
+	<form action="#" th:action="@{/salvar}" th:object="${papel}" method="post">
 		<fieldset>
-			<p>Id: <input type="text" th:field="*{id}" /></p>
 			<p>Descrição: <input type="text" th:field="*{descricao}" />
 			<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 		</fieldset>

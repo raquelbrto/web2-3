@@ -8,11 +8,20 @@
 
 <body>
 	<h1>Papel</h1>
-	<fieldset>
-		<p th:text="'id: ' + ${papel.id}" />
-		<p th:text="'Desrição: ' + ${papel.descricao}" />
-		<a href="/novopapel">Criar novo papel</a>
-	</fieldset>
+	<table> 
+		<thead>
+		<tr>
+				<th>#</th>
+				<th>Descrição</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr th:each="p :${papeis}">
+				<td th:text="${p.id}"></td>
+				<td th:text="${p.descricao}"></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 
 </html>
